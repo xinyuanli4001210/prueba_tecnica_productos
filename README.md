@@ -61,7 +61,7 @@ Esta aplicación permite:
 
 ## 🎬 Video demostrativo
 
-📹 [Ver video en Google Drive](https://drive.google.com/)
+📹 [Ver video en Google Drive]([https://drive.google.com/](https://drive.google.com/file/d/1OR30ER4atFwOg7EQRDmh9g1kKlWXIQT8/view?usp=drive_link)
 
 El video muestra:
 1. Agregar productos online.  
