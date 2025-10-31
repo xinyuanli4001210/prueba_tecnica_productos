@@ -50,10 +50,10 @@ Esta aplicación permite:
 ## 📸 Capturas de pantalla
 
 ### Modo online
-![Productos sincronizados](screenshots/online.jpg)
+![Productos sincronizados](./online.jpg)
 
 ### Modo offline
-![Producto guardado sin conexión](screenshots/offline.jpg)
+![Producto guardado sin conexión](./offline.jpg)
 
 *(Guarda tus imágenes en la carpeta `/screenshots` del repositorio)*
 
