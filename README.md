@@ -1,16 +1,77 @@
-# prueba_tecnica_productos
+# 🛒 Prueba Técnica Flutter - Gestión de Productos
 
-A new Flutter project.
+Aplicación móvil desarrollada con **Flutter** para la gestión de productos, integrando una **REST API pública** y **persistencia local** mediante **SQLite**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 Descripción general
 
-A few resources to get you started if this is your first Flutter project:
+Esta aplicación permite:
+- Agregar, editar y eliminar productos.
+- Guardar los productos localmente en una base de datos SQLite.
+- Sincronizar con la API pública [restful-api.dev](https://restful-api.dev).
+- Funcionar sin conexión (modo offline) y mostrar el estado con íconos de nube.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ⚙️ Tecnologías utilizadas
+
+- **Flutter 3.35.7**
+- **Dart 3**
+- **Material Design 3**
+- **HTTP** – conexión REST.
+- **Sqflite** – persistencia local.
+- **Path** – manejo de rutas de base de datos.
+
+---
+
+## 🧠 Decisiones de implementación
+
+- Se usó un **patrón Repository** para separar la lógica de red y almacenamiento local.  
+- `RestApiService` maneja las llamadas HTTP a `restful-api.dev`.  
+- `LocalDb` usa SQLite para persistir productos sin conexión.  
+- `ProductRepository` coordina la sincronización nube ↔ local y el manejo del modo offline.  
+- El modelo `Product` maneja los formatos JSON tanto para API como para SQLite.  
+- El diseño de la UI sigue **Material Design**, con formularios, cards y SnackBars informativos.
+
+---
+
+## 🎨 Interfaz
+
+| Sección | Descripción |
+|----------|--------------|
+| Formulario superior | Campos para nombre y precio del producto. |
+| Lista inferior | Cards de productos con íconos de sincronización. |
+| ☁️✅ | Producto sincronizado con la API. |
+| ☁️❌ | Producto guardado localmente sin conexión. |
+
+---
+
+## 📸 Capturas de pantalla
+
+### Modo online
+![Productos sincronizados](screenshots/online.jpg)
+
+### Modo offline
+![Producto guardado sin conexión](screenshots/offline.jpg)
+
+*(Guarda tus imágenes en la carpeta `/screenshots` del repositorio)*
+
+---
+
+## 🎬 Video demostrativo
+
+📹 [Ver video en Google Drive](https://drive.google.com/)
+
+El video muestra:
+1. Agregar productos online.  
+2. Agregar productos offline (modo avión).  
+3. Íconos de nube según estado.  
+4. Re-sincronización automática al volver la conexión.
+
+---
+
+## 👨‍💻 Autor
+
+**Jonathan David Cáceres**  
+Proyecto desarrollado como parte de la prueba técnica Flutter 2025.
