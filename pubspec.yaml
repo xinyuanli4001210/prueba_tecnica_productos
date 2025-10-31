@@ -1,0 +1,26 @@
+name: prueba_tecnica_productos
+description: App de gestión de productos (REST + SQLite) para prueba técnica.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2
+  sqflite: ^2.3.3
+  path: ^1.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  # Si llegas a usar imágenes o assets, descomenta y agrega rutas:
+  # assets:
+  #   - assets/
